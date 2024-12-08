@@ -505,6 +505,10 @@ p {
   margin-bottom: 8px;
 }
 
+.modal-form-box:last-of-type {
+  margin-bottom: 16px;
+}
+
 .modal-label {
   display: block;
   font-size: 12px;
@@ -553,6 +557,39 @@ p {
   transform: translateY(-50%);
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-cb-box {
+  margin-bottom: 24px;
+}
+
+.modal-label-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.modal-input-cb:checked + .modal-label > .modal-label-span {
+  fill: var(--cloud);
+  border: none;
+  background-color: var(--ocean);
+}
+
+.modal-input-cb:focus + .modal-label > .modal-label-span {
+  border-color: var(--iris);
+}
+
+.privacy {
+  color: var(--iris);
 }
 
 .backdrop.is-hidden {
