@@ -592,6 +592,25 @@ p {
   color: var(--iris);
 }
 
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--ocean);
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
