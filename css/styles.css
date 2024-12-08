@@ -519,6 +519,7 @@ p {
 }
 
 .modal-input {
+  display: block;
   width: 100%;
   height: 40px;
   padding: 0 10px 0 38px;
@@ -536,6 +537,16 @@ p {
   fill: var(--iris);
 }
 
+.modal-input.textarea {
+  resize: none;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+}
+
 .modal-svg {
   position: absolute;
   top: 50%;
@@ -544,7 +555,7 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-svg .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
