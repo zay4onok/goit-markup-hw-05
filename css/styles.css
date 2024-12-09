@@ -584,7 +584,7 @@ p {
   background-color: var(--ocean);
 }
 
-.modal-input-cb:focus + .modal-label > .modal-label-span {
+.modal-input-cb:focus-visible + .modal-label > .modal-label-span {
   border-color: var(--ocean);
 }
 
