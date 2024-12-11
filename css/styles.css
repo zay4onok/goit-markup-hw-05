@@ -78,6 +78,18 @@ p {
   padding: 0 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -198,6 +210,7 @@ p {
   background-color: var(--gray);
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero__title {
