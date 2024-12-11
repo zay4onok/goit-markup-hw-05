@@ -72,9 +72,10 @@ p {
 }
 
 .container {
-  max-width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .social-media {
